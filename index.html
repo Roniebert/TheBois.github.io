@@ -10,7 +10,7 @@
       padding: 30px;
       line-height: 1.4;
       color: #222;
-      background: #ffcc80; /* yellowish orange */
+      background: #923a; /* yellowish orange */
     }
 
     h1 {
@@ -19,13 +19,24 @@
     }
 
     /* Grid layout: auto-fit makes them shrink nicely */
-    .people-row {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      justify-content: center;
-      margin-top: 20px;
+.people-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* always 4 per row */
+  gap: 20px;
+  margin-top: 20px;
     }
+    
+    @media (max-width: 900px) {
+  .people-row {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 500px) {
+  .people-row {
+    grid-template-columns: 1fr; /* 1 per row on small phones */
+  }
+}
 
     .person {
       display: flex;               /* equal height cards */
@@ -42,9 +53,9 @@
     }
 
     .person img {
-      width: 70%;          /* smaller image */
+      width: 75%;          /* smaller image */
       height: auto;
-      border-radius: 8px;
+      border-radius: 5px;
       margin: 0 auto 10px;
       display: block;
     }
@@ -82,7 +93,146 @@
     </div>
 
     <div class="person">
-      <img src="Zyvan.jpg" alt="Zyvan">
+      <img src="Zyvan2.jpg" alt="Zyvan">
+      <h3><a href="https://www.facebook.com/zyvan.olvido" target="_blank">Megamind Rizzler</a></h3>
+      <p>As smart as Megamind and with the aura of a certified Rizzler. Legend has it, any woman that comes within a 5-meter radius either blushes… or bolts. Risky aura, powerful presence.</p>
+    </div>
+
+    <div class="person">
+      <img src="Andres.jpg" alt="Andres">
+      <h3><a href="https://www.facebook.com/andres.alimpangog" target="_blank">Canadian Grigger</a></h3>
+      <p>Built like a twig but somehow rizzing on par with Megamind himself. Ever since Canada, he’s been pulling ABGs left and right like it’s a national sport. Proof that charisma > BMI.</p>
+    </div>
+
+    <div class="person">
+      <img src="Dan.jpg" alt="Unknown guy">
+      <h3><a href="https://www.greetingsisland.com/cards/thoughts-and-feelings/miss-you" target="_blank">Missing guy</a></h3>
+      <p>Under Maintenance P.S COME BACK.</p>
+    </div>
+
+    <div class="person">
+      <img src="David.jpg" alt="David">
+      <h3><a href="https://www.facebook.com/Davidjoshj" target="_blank">Unc Nigga</a></h3>
+      <p>You can call him senior, or senior’s senior. Bro is literally smurfing in life yet still managing to fail at school. Full of wisdom, advice, and old-man jokes. Just… not the type of wisdom that helps with academics.</p>
+    </div>
+
+    <div class="person">
+      <img src="Jezreel.jpg" alt="Jezreel">
+      <h3><a href="https://www.facebook.com/Jezreel01" target="_blank">Rusty Nipples</a></h3>
+      <p>Why call him that? You’d have to experience it. The jolliest soul in the group, rocking the most expensive PC setup known to man. Secretly enjoys being pegged and dominated. Famously hated his ex, then somehow extended the beef to an entire group of people because of her. His only dream? To hit Radiant in Valorant. (Pray for him.)</p>
+    </div>
+
+    <div class="person">
+      <img src="Joshua.jpg" alt="Joshua">
+      <h3><a href="https://www.facebook.com/joshua.pedrano.90" target="_blank">Balding Nigga</a></h3>
+      <p>RIP to his hairline. But what he lacks in follicles, he makes up for in vibes. A true beach-lover also known due to his past BEACH — probably because the waves have more volume than his head ever will (also pray for him). Known for sneaking out at night and once paying ₱3,000 just because his ride got clamped. A man of adventures, but not always of smart decisions.</p>
+    </div>
+
+    <div class="person">
+      <img src="Ronie.jpg" alt="Ronie">
+      <h3><a href="https://www.facebook.com/ronie.lauron.629055" target="_blank">Closet Gaylord</a></h3>
+      <p>Touch at your own risk. Known for surprise attacks, suspiciously soft hands, and the uncanny ability to make every bro in the room slightly uncomfortable.</p>
+    </div>
+  </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Meet the BOIS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      line-height: 1.4;
+      color: #222;
+      background: #ffcc80; /* yellowish orange */
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0 0 20px;
+    }
+
+    /* Grid layout: auto-fit makes them shrink nicely */
+.people-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* always 4 per row */
+  gap: 20px;
+  margin-top: 20px;
+    }
+    
+    @media (max-width: 900px) {
+  .people-row {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 500px) {
+  .people-row {
+    grid-template-columns: 1fr; /* 1 per row on small phones */
+  }
+}
+
+    .person {
+      display: flex;               /* equal height cards */
+      flex-direction: column;      
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      background: white;
+      padding: 14px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      max-width: 260px;  /* prevent giant cards */
+      margin: 0 auto;   /* center card in grid cell */
+    }
+
+    .person img {
+      width: 75%;          /* smaller image */
+      height: auto;
+      border-radius: 5px;
+      margin: 0 auto 10px;
+      display: block;
+    }
+
+    .person h3 {
+      margin: 6px 0 4px;
+      font-size: 1.05rem;
+    }
+
+    .person a {
+      text-decoration: none;
+      color: #1565c0; /* Facebook blue */
+    }
+
+    .person a:hover {
+      text-decoration: underline;
+    }
+
+    .person p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Meet the BOIS</h1>
+
+  <div class="people-row">
+    <div class="person">
+      <img src="William.jpg" alt="William">
+      <h3><a href="https://www.facebook.com/sam.william.335003" target="_blank">BATA TESTER</a></h3>
+      <p>Sam never loses sight when kids are around literally. A man of sharp vision and sharper jokes. He’s the guy you want around for laughs, but maybe not for babysitting...</p>
+    </div>
+
+    <div class="person">
+      <img src="Zyvan2.jpg" alt="Zyvan">
       <h3><a href="https://www.facebook.com/zyvan.olvido" target="_blank">Megamind Rizzler</a></h3>
       <p>As smart as Megamind and with the aura of a certified Rizzler. Legend has it, any woman that comes within a 5-meter radius either blushes… or bolts. Risky aura, powerful presence.</p>
     </div>
