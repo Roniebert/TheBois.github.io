@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Meet the People</title>
+  <title>Meet the BOIS</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 30px;
       line-height: 1.4;
       color: #222;
-      background: #ffcc80; /* 🌞 yellowish-orange background */
+      background: #ffcc80; /* yellowish orange */
     }
 
     h1 {
@@ -18,17 +18,20 @@
       margin: 0 0 20px;
     }
 
+    /* Grid layout: 2 columns */
     .people-row {
-      display: flex;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 28px;
-      flex-wrap: wrap;
+      justify-content: center;
       margin-top: 20px;
     }
 
     .person {
+      display: flex;               /* make equal heights possible */
+      flex-direction: column;      /* stack image, name, text vertically */
+      justify-content: space-between;
       text-align: center;
-      max-width: 220px;
       background: white;
       padding: 14px;
       border-radius: 10px;
@@ -48,12 +51,12 @@
     }
 
     .person a {
-      text-decoration: none; /* remove underline */
-      color: #1565c0;        /* Facebook blue */
+      text-decoration: none;
+      color: #1565c0; /* Facebook blue */
     }
 
     .person a:hover {
-      text-decoration: underline; /* underline when mouse hovers */
+      text-decoration: underline;
     }
 
     .person p {
@@ -62,67 +65,65 @@
       color: #444;
     }
 
+    /* On phones, stack in 1 column */
     @media (max-width: 600px) {
       .people-row {
-        gap: 12px;
-      }
-      .person {
-        max-width: 100%;
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
 
-  <h1>Meet the People</h1>
+  <h1>Meet the BOIS</h1>
 
   <div class="people-row">
     <div class="person">
       <img src="William.jpg" alt="William">
-      <h3><a href="https://facebook.com/PUT_WILLIAM_LINK_HERE" target="_blank">William</a></h3>
-      <p>Short bio for William.</p>
+      <h3><a href="https://www.facebook.com/sam.william.335003" target="_blank">BATA TESTER</a></h3>
+      <p>Sam never loses sight when kids are around literally. A man of sharp vision and sharper jokes. He’s the guy you want around for laughs, but maybe not for babysitting...</p>
     </div>
 
     <div class="person">
       <img src="Zyvan.jpg" alt="Zyvan">
-      <h3><a href="https://facebook.com/PUT_ZYVAN_LINK_HERE" target="_blank">Zyvan</a></h3>
-      <p>Short bio for Zyvan.</p>
+      <h3><a href="https://www.facebook.com/zyvan.olvido" target="_blank">Megamind Rizzler</a></h3>
+      <p>As smart as Megamind and with the aura of a certified Rizzler. Legend has it, any woman that comes within a 5-meter radius either blushes… or bolts. Risky aura, powerful presence.</p>
     </div>
 
     <div class="person">
       <img src="Andres.jpg" alt="Andres">
-      <h3><a href="https://facebook.com/PUT_ANDRES_LINK_HERE" target="_blank">Andres</a></h3>
-      <p>Short bio for Andres.</p>
+      <h3><a href="https://facebook.com/PUT_ANDRES_LINK_HERE" target="_blank">Canadian Grigger</a></h3>
+      <p>Built like a twig but somehow rizzing on par with Megamind himself. Ever since Canada, he’s been pulling ABGs left and right like it’s a national sport. Proof that charisma > BMI.</p>
     </div>
 
     <div class="person">
-      <img src="Dan.jpg" alt="Dan">
-      <h3><a href="https://facebook.com/PUT_DAN_LINK_HERE" target="_blank">Dan</a></h3>
-      <p>Short bio for Dan.</p>
+      <img src="Dan.jpg" alt="Unknown guy">
+      <h3><a href="https://www.greetingsisland.com/cards/thoughts-and-feelings/miss-you" target="_blank">Missing guy</a></h3>
+      <p>Under Maintenance P.S COME BACK.</p>
     </div>
 
     <div class="person">
       <img src="David.jpg" alt="David">
-      <h3><a href="https://facebook.com/PUT_DAVID_LINK_HERE" target="_blank">David</a></h3>
-      <p>Short bio for David.</p>
+      <h3><a href="https://facebook.com/PUT_DAVID_LINK_HERE" target="_blank">Unc Nigga</a></h3>
+      <p>You can call him senior, or senior’s senior. Bro is literally smurfing in life yet still managing to fail at school. Full of wisdom, advice, and old-man jokes. Just… not the type of wisdom that helps with academics.</p>
     </div>
 
     <div class="person">
       <img src="Jezreel.jpg" alt="Jezreel">
-      <h3><a href="https://facebook.com/PUT_JEZREEL_LINK_HERE" target="_blank">Jezreel</a></h3>
-      <p>Short bio for Jezreel.</p>
+      <h3><a href="https://facebook.com/PUT_JEZREEL_LINK_HERE" target="_blank">Rusty Nipples</a></h3>
+      <p>Why call him that? You’d have to experience it. The jolliest soul in the group, rocking the most expensive PC setup known to man. Secretly enjoys being pegged and dominated. Famously hated his ex, then somehow extended the beef to an entire group of people because of her. His only dream? To hit Radiant in Valorant. (Pray for him.)</p>
     </div>
 
     <div class="person">
       <img src="Joshua.jpg" alt="Joshua">
-      <h3><a href="https://facebook.com/PUT_JOSHUA_LINK_HERE" target="_blank">Joshua</a></h3>
-      <p>Short bio for Joshua.</p>
+      <h3><a href="https://facebook.com/PUT_JOSHUA_LINK_HERE" target="_blank">Balding Nigga</a></h3>
+      <p>RIP to his hairline. But what he lacks in follicles, he makes up for in vibes. A true beach-lover also known due to his past BEACH — probably because the waves have more volume than his head ever will (also pray for him). Known for sneaking out at night and once paying ₱3,000 just because his ride got clamped. A man of adventures, but not always of smart decisions.</p>
     </div>
 
     <div class="person">
       <img src="Ronie.jpg" alt="Ronie">
-      <h3><a href="https://facebook.com/PUT_RONIE_LINK_HERE" target="_blank">Ronie</a></h3>
-      <p>Short bio for Ronie.</p>
+      <h3><a href="https://facebook.com/PUT_RONIE_LINK_HERE" target="_blank">Closet Gaylord</a></h3>
+      <p>Touch at your own risk. Known for surprise attacks, suspiciously soft hands, and the uncanny ability to make every bro in the room slightly uncomfortable.</p>
     </div>
   </div>
 
