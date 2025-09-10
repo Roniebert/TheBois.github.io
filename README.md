@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My First Website</title>
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>This is my first HTML page hosted on GitHub Pages!</p>
+
+  <h2>About Me</h2>
+  <p>My name is Sam. I’m learning HTML step by step.</p>
+
+  <h2>My Hobbies</h2>
+  <ul>
+    <li>Coding</li>
+    <li>Gaming</li>
+    <li>Music</li>
+  </ul>
+
+  <h2>Links</h2>
+  <p>
+    <a href="https://github.com" target="_blank">Visit GitHub</a>
+  </p>
+</body>
+</html>
